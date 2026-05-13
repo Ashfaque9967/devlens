@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input {
+  flex: 1;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.input:focus {
+  border-color: #ccff00;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: #ccff00;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.375rem;
+}
+
+.error {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  color: #ff4444;
+}

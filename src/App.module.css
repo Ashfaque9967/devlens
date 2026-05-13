@@ -1,0 +1,38 @@
+.app {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 2rem;
+}
+
+.searchSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.errorCard {
+  padding: 1.5rem;
+  background-color: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.errorText {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #ff4444;
+  margin: 0;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

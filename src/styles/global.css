@@ -1,0 +1,70 @@
+:root {
+  --bg: #000000;
+  --surface: #111111;
+  --surface-elevated: #1a1a1a;
+  --border: #222222;
+  --text: #ffffff;
+  --text-dim: #888888;
+  --text-faint: #444444;
+  --accent: #ccff00;
+  --accent-text: #000000;
+  
+  --font: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --s-1: 8px;
+  --s-2: 12px;
+  --s-3: 16px;
+  --s-4: 20px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 40px;
+  --s-8: 48px;
+  
+  --t-xs: 11px;
+  --t-sm: 13px;
+  --t-base: 15px;
+  --t-lg: 18px;
+  --t-xl: 24px;
+  --t-2xl: 32px;
+  --t-3xl: 40px;
+  
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 20px;
+  --r-xl: 24px;
+  --r-full: 999px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--t-base);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--r-full);
+}
