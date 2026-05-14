@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  max-width: 200px;
+}
+
+.searchTrigger {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 120ms ease;
+  align-self: center;
+}
+
+.searchTrigger:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.searchTrigger:active {
+  transform: scale(0.92);
+}

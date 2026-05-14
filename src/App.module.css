@@ -1,38 +1,66 @@
 .app {
-  min-height: 100vh;
-  background-color: #000;
+  min-height: 100dvh;
+  background-color: #ffffff;
+  padding-bottom: 120px;
 }
 
 .main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 6rem 1.5rem 2rem;
+  width: 100%;
 }
 
-.searchSection {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+.page {
+  padding-top: 0;
 }
 
-.errorCard {
-  padding: 1.5rem;
-  background-color: rgba(255, 68, 68, 0.1);
-  border: 1px solid rgba(255, 68, 68, 0.3);
-  border-radius: 0.75rem;
-  margin-bottom: 2rem;
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.02em;
+  padding: 32px 24px 0;
 }
 
-.errorText {
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  color: #ff4444;
-  margin: 0;
-  text-align: center;
+.subtext {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 8px;
+  padding: 0 24px;
 }
 
-.results {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.error {
+  padding: 32px 24px;
+}
+
+.error p {
+  font-size: 15px;
+  color: #ff3333;
+  font-weight: 500;
+}
+
+.empty {
+  padding: 48px 24px;
+}
+
+.empty p {
+  font-size: 15px;
+  color: #999999;
+}
+
+.repoHeader {
+  padding: 24px 24px 16px;
+}
+
+.repoTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.repoCount {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 4px;
+  font-weight: 500;
 }

@@ -1,3 +1,4 @@
+// ./src/utils/githubApi.ts
 import type { GitHubUser, GitHubRepo } from '../types/github';
 
 const BASE_URL = 'https://api.github.com';
@@ -34,7 +35,7 @@ export async function getUser(username: string): Promise<GitHubUser> {
 
 export async function getRepos(username: string): Promise<GitHubRepo[]> {
   return fetchGitHub<GitHubRepo[]>(
-    `/users/${username}/repos?sort=updated&per_page=100`
+    `/users/${username}/repos?sort=updated&per_page=10`
   );
 }
 

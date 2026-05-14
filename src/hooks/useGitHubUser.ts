@@ -1,3 +1,4 @@
+// ./src/hook/useGithubUser.ts
 import { useQuery } from "@tanstack/react-query";
 import { getUser } from "../utils/githubApi";
 
