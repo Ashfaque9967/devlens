@@ -27,7 +27,7 @@ export function MobileBlocker() {
         </div>
 
         <h1 className={styles.headline}>
-          DevLens
+          Github Profile
           <br />
           <span className={styles.headlineMuted}>is for phones.</span>
         </h1>
