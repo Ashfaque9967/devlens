@@ -7,7 +7,10 @@ interface ProfileRepoListProps {
 }
 
 export function ProfileRepoList({ repos }: ProfileRepoListProps) {
-  const topRepos = repos.slice(0, 5);
+  const sortedRepos = [...repos].sort(
+    (a, b) => b.stargazers_count - a.stargazers_count,
+  );
+  const topRepos = sortedRepos.slice(0, 5);
 
   if (topRepos.length === 0) return null;
 

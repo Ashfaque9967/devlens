@@ -19,6 +19,9 @@ export interface GitHubRepo {
   forks_count: number;
   updated_at: string;
   topics: string[];
+  owner?: {
+    login: string;
+  };
 }
 
 export interface LanguageBreakdown {

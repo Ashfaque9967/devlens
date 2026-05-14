@@ -18,6 +18,11 @@ function getContrastColor(hexColor: string): string {
 export function FullRepoCard({ repo }: FullRepoCardProps) {
   const bgColor = getLanguageColor(repo.language);
   const textColor = getContrastColor(bgColor);
+  const repoUrl = `https://github.com/${repo.owner?.login || ""}/${repo.name}`;
+
+  const handleClick = () => {
+    window.open(repoUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div
@@ -26,6 +31,10 @@ export function FullRepoCard({ repo }: FullRepoCardProps) {
         backgroundColor: bgColor,
         color: textColor,
       }}
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && handleClick()}
     >
       <div className={styles.header}>
         <h3 className={styles.name}>{repo.name}</h3>

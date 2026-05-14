@@ -7,11 +7,15 @@ interface RepoListProps {
 }
 
 export function RepoList({ repos }: RepoListProps) {
-  if (repos.length === 0) return null;
+  const sortedRepos = [...repos].sort(
+    (a, b) => b.stargazers_count - a.stargazers_count,
+  );
+
+  if (sortedRepos.length === 0) return null;
 
   return (
     <div className={styles.container}>
-      {repos.map((repo) => (
+      {sortedRepos.map((repo) => (
         <FullRepoCard key={repo.id} repo={repo} />
       ))}
     </div>
